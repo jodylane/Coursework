@@ -1,0 +1,35 @@
+header{
+  position: relative;
+  //background-color: cornflowerblue;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 3px;
+  .bottomBorder(@bHeight, double, @bColor);
+  .logo{
+    height: 100%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    img{
+      height: 90%;
+      //margin-top: 5px;
+
+    }
+
+  }
+  h2{
+    line-height: 90px;
+    margin-left: 11%;
+  }
+.clearFix;
+}
+@media screen and (max-width: 800px){
+  header{
+    height: 200px;
+    h2{
+      line-height: 190px;
+      margin-left: 25%;
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <!--<link href="$CSSPath$" rel="stylesheet">-->
+    <style>
+        .done-true{
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
+</head>
+<body ng-app="simpleApp">
+
+<div>
+    <label>Names:</label>
+    <input ng-model="myForm" type="text" placeholder="enter text.."/>
+    <h1>{{myForm}}</h1>
+</div>
+<div ng-controller="AppController as appControl">
+    <ul>
+        <li ng-repeat="item in appControl.listItems" class="done-{{item.done}}">
+            <input ng-checked="item.done" ng-model="todoDone" ng-click="appControl.upDateList(item)" type="checkbox"/>
+            {{item.name}}
+        </li>
+    </ul>
+    <form ng-submit="appControl.addTodo()">
+        <input type="text" ng-model="appControl.todoText"  size="30"
+               placeholder="add new todo here">
+        <input ng-model="appControl.markDone" type="checkbox"/>
+        <input type="submit" value="add">
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

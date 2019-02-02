@@ -1,0 +1,38 @@
+.bottomBorder(@bHt: @bHeight, @bSt: @bStyle, @bCr: @bColor){
+  border-bottom:  @bHt @bSt @bCr;
+}
+
+.topBorder(@bHt: @bHeight, @bSt: @bStyle, @bCr: @bColor){
+  border-top:  @bHt @bSt @bCr;
+}
+
+.callToActionButton (){
+  color: #fff;
+  background-color: @devRed;
+  padding: 20px 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: lighten(@devRed, 10%);
+  }
+}
+.input(){
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 4px;
+    &:focus{
+      box-shadow: 0px 0px 8px .5px cornflowerblue;
+    }
+}
+.button(){
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #555;
+  box-shadow: 0 3px 2px 0 black;
+  &:active{
+    box-shadow: 0 0 0 0 black;
+  }
+}

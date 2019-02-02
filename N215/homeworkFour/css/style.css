@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+html,body{
+    min-height: 100%;
+    background-color: #333;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+/*^My Default Styles*/
+nav{
+    background-color: #66bb66;
+}
+.navBar{
+    height: 50px;
+    width: 490px;
+    margin: 0 auto;
+}
+.navBar span{
+    margin-right: 80px;
+    text-decoration: none;
+    color: #000;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.navBar span:last-child{
+    margin-right: 0;
+}
+.navBar span:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -4px;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.navBar span:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+/*^My Navigation Styles^*/
+.content{
+    width: 1110px;
+    height: 850px;
+    margin: 20px auto 0 auto;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+#skillsBar span{
+     top: -30px;
+     left: 2%;
+     position: relative;
+     font-size: 1.4em;
+     font-weight: bolder;
+     font-family: monospace;
+     color: #ffffff;
+ }
+progress{
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2.5em;
+    width: 100%;
+}
+progress::-webkit-progress-bar{
+    background-color: #e0eaf0;
+}
+progress::-webkit-progress-value{
+    background-color:#329ad1;
+}
+progress::-moz-progress-bar{
+    background-color: #329ad1;
+}

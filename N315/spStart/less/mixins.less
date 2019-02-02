@@ -1,0 +1,12 @@
+.clearFix(){
+  *zoom: 1;
+  &:before, &:after{
+    line-height: 1;
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+.bottomBorder(@bHt: @bHeight, @bSt: @bStyle, @bCr: @bColor){
+  border-bottom: @bHt @bSt @bCr;
+}

@@ -1,0 +1,21 @@
+<h1>Skills</h1>
+<div id="skillsBar">
+    <progress value="45" max="100"></progress><span>JavaScript/jQuery</span>
+    <progress value="50" max="100"></progress><span>Photoshop</span>
+    <progress value="35" max="100"></progress><span>Illustrator</span>
+    <progress value="65" max="100"></progress><span>HTML5</span>
+    <progress value="75" max="100"></progress><span>CSS</span>
+    <progress value="5" max="100"></progress><span>PHP</span>
+    <progress value="30" max="100"></progress><span>Premier</span>
+</div>
+<script>
+
+        $('progress').each(function() {
+            var max = $(this).val();
+            $(this).val(0).animate(
+                    {value: max},
+                    {duration: 2000, easing: 'swing'}
+            );
+        })
+
+</script>

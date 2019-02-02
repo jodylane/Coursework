@@ -1,0 +1,27 @@
+.toddMenu{
+  position: absolute;
+  min-height: 100%;
+  width: 20%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: darkblue;
+  ul{
+
+    list-style: none;
+    li{
+      cursor: pointer;
+      padding-left: 20px;
+      .borderBottom(2px ,solid,@barColor);
+      background-color: green;
+      &:nth-child(odd){
+        background-color: lighten(green,20%);
+      }
+      &:active{
+
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 24px;
+}
+/*My Default Styles*/
+nav{
+    height: 50px;
+    background-color: rgba(14, 76, 137, 0.75);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: auto;
+}
+nav a:hover{
+    color: #F28123;
+}
+.navBar{
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    height: 50px;
+    max-width: 1020px;
+}
+/*Navigation Styles*/
+section{
+    height: 100%;
+    background-color: blueviolet;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contentWidth{
+    max-width: 1020px;
+}
+.content{
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    padding: 60px;
+
+    box-sizing: border-box;
+    /*keeps the border correct and still applies the padding with out going outside the box*/
+}
+.evenSection{
+    height: 50%;
+    background-color: #F28123;
+    overflow: hidden;
+}
+.odd{
+    background-color: rgba(0,0,0,.4);
+}
+/*Sections and Content Setup Styles*/
+.homeShadow{
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+}
+.callToAction{
+    display: -webkit-flex;
+    display: flex;
+    padding: 20px 40px;
+    min-height: 10%;
+    min-width: 20%;
+    background-color: rgba(72, 72, 72, 0.8);
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+
+}
+.callToAction .ctaText{
+    margin: auto;
+    font-size: 300%;
+    color: #ffffff;
+}
+/*shadow for home styles*/
+.aboutRoundedImage{
+    /*background-color: aquamarine;*/
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-image: url("../assets/DeathtoStock_NotStock7Optimized.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.homeView{
+    background-image: url("../assets/cameraMan.jpg");
+}
+.requireView{
+    background-image: url("../assets/sketchBookOptimized.jpg");
+}
+.contactView{
+    background-image: url("../assets/homeDropSpotOptimized.jpg");
+}
+/*Styles for images */
+.header{
+    /*background-color: brown;*/
+    width: 100%;
+}
+.header h1{
+    text-align: center ;
+}
+p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*paragraph and header center*/
+.image{
+    width: 30%;
+}
+.paragraph{
+    width: 70%;
+}
+/*about section fix*/
+input{
+    height: 26px;
+    width: 250px;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+input[type=button]{
+    background: rgba(255,255,255,1);
+    cursor:pointer;
+    height: 35px;
+    width: 250px;
+    transition: all 1s ease;
+}
+input[type=button]:hover{
+    background-color: rgba(40,75,99,1);
+}
+form{
+   text-align: center;
+}
+/*contact Styles*/

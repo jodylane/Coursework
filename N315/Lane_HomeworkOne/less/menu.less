@@ -1,0 +1,58 @@
+.menu{
+  //background-color: aqua;
+  width: 40px;
+  height: 29px;
+  align-self: center;
+  a{
+    .borderBottom(0px,@barStyle,@barColor);
+    &:hover{
+      background-color: #720000;
+    }
+  }
+}
+.menu-btn {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: @menuWth;
+  height: (@menuNewHt * 2) + @menuHt;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+  .transition(@fast);
+  background-color: @menuColor;
+  width: @menuWth;
+  height: @menuHt;
+}
+.menu-btn span {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: @menuNewHt;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  &:before {
+    top: -@menuNewHt;
+  }
+  &:after {
+    top: @menuNewHt;
+  }
+}/* Menu Button */
+.menu-btn.active span{
+  background-color: transparent;
+  &:before, &:after {
+    top: 0;
+  }
+  &:before {
+    .rotate(-135deg);
+  }
+  &:after {
+    .rotate(135deg);
+  }
+}/* Menu Button Active */
+@media screen and (max-width: 560px){
+}

@@ -1,0 +1,288 @@
+.modalBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000, 70%);
+  z-index: 97;
+  display: none;
+  justify-content: center;
+
+  .signupForm {
+    width: 100%;
+    height: 500px;
+    //background-color: #456374;
+    display: none ;
+    h3 {
+      color: darken(#ffffff, 65%, 0);
+    }
+  }
+  .loginForm {
+    width: 100%;
+    height: 500px;
+    //background-color: #456374;
+    display: none;
+  }
+  .modalFG {
+    //position: relative;
+    align-self: center;
+    align-content: center;
+    height: 600px;
+    width: 70%;
+    background-color: darken(#ffffff, 10%, 0);
+    border-radius: 20px;
+    .modalExit {
+      //background-color: #5aff86;
+      width: 4.5%;
+      height: 8%;
+      float: right;
+      cursor: pointer;
+      i {
+        font-size: 250%;
+        padding: 5px 10px;
+        color: darken(#ffffff, 65%, 0);
+        &:hover{
+          color: @devRed;
+        }
+      }
+    }
+    .form {
+      //background-color: #5aff86;
+      width: 100%;
+      height: 500px;
+      //min-height: 300px;
+      align-self: center;
+      color: darken(#ffffff, 65%, 0);
+      h3{
+        margin-bottom: 12px;
+      }
+      .input {
+        //background-color: red;
+        width: 40%;
+        height: 100%;
+        margin: 0 auto;
+        input {
+          width: 97%;
+          .input();
+        }
+        .err {
+          margin-bottom: 0;
+          color: red;
+        }
+        button {
+          .button();
+          position: relative;
+          text-align: center;
+          &:hover{
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+
+}
+.modalBG2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000, 70%);
+  z-index: 98;
+  display: none;
+  justify-content: center;
+  .modalFG2 {
+    align-self: center;
+    align-content: center;
+    height: 200px;
+    width: 30%;
+    background-color: darken(#ffffff, 10%, 0);
+    border-radius: 20px;
+    color: darken(#ffffff, 65%, 0);
+    .modalExit2 {
+      //background-color: #5aff86;
+      width: 9%;
+      height: 50px;
+      float: right;
+      cursor: pointer;
+
+      i {
+        font-size: 250%;
+        padding: 5px 10px;
+        color: darken(#ffffff, 65%, 0);
+        &:hover{
+          color: @devRed;
+        }
+      }
+    }
+  }
+  .fail,.noDB {
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    //background-color: #456374;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    .input{
+      padding: 0 20px;
+    }
+  }
+  .success{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    //background-color: #456374;
+    display: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+}
+@media screen and(max-width: 1500px) {
+  .modalBG {
+
+    .modalFG {
+      .form{
+
+        //background-color: #5aff86 ;
+      }
+      .modalExit {
+        position: relative;
+        right: 5px;
+        //background-color: red;
+      }
+    }
+  }
+  .modalBG2 {
+
+    .modalFG2 {
+
+      .modalExit2 {
+        width: 10%;
+        position: relative;
+        right: 5px;
+        //background-color: red;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .modalBG {
+
+    .modalFG {
+      .form{
+        .input{
+          width: 50%;
+          //background-color: #5aff86 ;
+          input{
+            width: 96%;
+          }
+        }
+      }
+      .modalExit {
+        width: 6%;
+        //background-color: aqua;
+      }
+    }
+  }
+  .modalBG2 {
+
+    .modalFG2 {
+
+      .modalExit2 {
+        width: 14%;
+        //background-color: aqua;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .modalBG {
+
+    .modalFG {
+      .form{
+        .input{
+          width: 70%;
+          //background-color: #5aff86 ;
+          input{
+            width: 95%;
+          }
+        }
+      }
+      .modalExit {
+        width: 9%;
+        //background-color: red;
+      }
+    }
+  }
+  .modalBG2 {
+
+    .modalFG2 {
+      width: 40%;
+      .modalExit2 {
+        width: 16%;
+
+        //background-color: red;
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .modalBG {
+
+    .modalFG {
+      .form{
+        .input{
+          //background-color: #5aff86 ;
+          input{
+            width: 94%;
+          }
+        }
+      }
+      .modalExit {
+        width: 12%;
+        //background-color: aqua;
+      }
+    }
+  }
+  .modalBG2 {
+
+    .modalFG2 {
+      width: 50%;
+      .modalExit2 {
+        width: 18%;
+
+        //background-color: aqua;
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .modalBG {
+
+    .modalFG {
+      .form{
+        .input{
+          width: 80%;
+          //background-color: #5aff86 ;
+        }
+      }
+      .modalExit {
+        width: 15%;
+        //background-color: red;
+      }
+    }
+  }
+  .modalBG2 {
+
+    .modalFG2 {
+      width: 60%;
+
+    }
+  }
+}

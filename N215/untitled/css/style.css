@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+.column{
+    background-color: green;
+    width: 250px;
+    height: 325px;
+    float: left;
+    margin-right: 36.66666666666666666666667px;
+    position: relative;
+}
+
+.column img{
+    width: 250px;
+    height: 140px;
+
+}
+.column h3{
+    text-align: center;
+}
+.column:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+}
+.column:hover:before{
+    visibility: visible;
+
+}

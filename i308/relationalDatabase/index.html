@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relationships with Tickles</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="content-Wrapper">
+
+    <!--<div class="titleHeader">-->
+    <!--<h1>Welcome to Database Relationship Advice With TICKLES!!!</h1>-->
+    <!--</div>-->
+
+    <div class="move">
+        <span onclick="showAddOwner()">Add Owner</span>
+        <span onclick="listOwners()">View Owner</span>
+
+    </div>
+
+    <div class="page" id="content">
+
+    </div>
+
+    <div class="page" id="owner">
+        <h2>Owner Info</h2>
+
+
+        <div class="ownerInfo">
+
+        </div>
+        <h2>Cats</h2>
+
+        <div class="petsListing">
+
+        </div>
+    </div>
+
+    <div class="page" id="addOwner">
+        <input class="txtOwnerName" placeholder="Owner Name"/><br/>
+
+        <div class="center">
+            <button class="btnAddOwner">Add Owner</button>
+        </div>
+    </div>
+
+    <div class="page" id="addCat">
+        <input class="txtCatName" placeholder="Cat Name"/><br/>
+        <input class="txtCatType" placeholder="Cat Type"/><br/>
+        <input class="txtCatAge" placeholder="Cat Age"/><br/>
+        <textarea class="txtCatDescription" placeholder="Cat Description"></textarea>
+
+        <div class="center">
+            <button class="btnAddCat">Add Cat</button>
+        </div>
+    </div>
+    <div id="catPage" class="page">
+        <div class="catName"></div>
+        <br/>
+
+        <div class="catType"></div>
+        <br/>
+
+        <div class="catAge"></div>
+        <br/>
+
+        <div class="catDescription"></div>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/dbTools.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

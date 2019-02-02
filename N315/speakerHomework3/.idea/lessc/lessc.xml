@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LessManager">
+    <option name="lessProfileMap">
+      <map>
+        <entry key="0">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\jodyl\Desktop\collegeFiles\N315\speakerHomework3\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="0" />
+              <option name="includePattern" value="styles.less" />
+              <option name="lessDirPath" value="C:\Users\jodyl\Desktop\collegeFiles\N315\speakerHomework3\less" />
+              <option name="name" value="speakerHomework3" />
+            </LessProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

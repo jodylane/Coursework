@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+input,
+textarea {
+  font-size: 130%;
+  border-radius: 5px;
+  padding: 3px 10px;
+  width: 95%;
+  color: #ccc;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 8px 2px cornflowerblue;
+  color: #333333;
+}
+textarea {
+  max-height: 100px;
+  min-height: 100px;
+  max-width: 94%;
+  font-size: 170%;
+}
+.center {
+  width: 100px;
+  margin: 0 auto;
+}
+.center button {
+  width: 100%;
+}
+span {
+  cursor: pointer;
+}
+span:hover {
+  color: cornflowerblue;
+}
+.span {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.span span {
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.span span:hover {
+  box-shadow: 0px 0px 8px 2px cornflowerblue;
+}
+.span span:nth-child(odd) {
+  margin-right: 20px;
+}
+.wholePage {
+  position: relative;
+  top: 100px;
+  width: 400px;
+  min-height: 400px;
+  border-radius: 20px;
+  background-color: #333333;
+  color: #fff;
+  padding: 30px;
+}
+input {
+  padding: 3px 0 3px 5px;
+  margin: 5px;
+}
+textarea {
+  padding-left: 2px;
+  margin: 5px;
+}
+button {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #555;
+  box-shadow: 0 1.5px 10px .5px cornflowerblue;
+}
+button:active {
+  box-shadow: 0 0 0 0 black;
+}
+button:hover {
+  background-color: #cccccc;
+  color: cornflowerblue;
+}

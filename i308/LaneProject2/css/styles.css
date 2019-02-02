@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+#container #map {
+  height: 400px;
+  width: 600px;
+  background-color: red;
+}
+#container canvas {
+  border: #000 solid 1px;
+  cursor: pointer;
+}
+#container #drawingBrowser {
+  width: 600px;
+}
+#container #drawingBrowser #drawingShowcase {
+  border: #000 solid 1px;
+}
+#container #drawingBrowser li {
+  list-style: none;
+  cursor: pointer;
+}
+#container #sketchWidget {
+  margin-top: 20px;
+  height: 400px;
+  width: 600px;
+}
+@media screen and (max-width: 1200px) {
+  #container #map {
+    height: 400px;
+    width: 470px;
+    background-color: blue;
+  }
+  #container #drawingBrowser {
+    width: 400px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #container {
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  #container #map {
+    height: 400px;
+    width: 470px;
+    background-color: blue;
+  }
+  #container #drawingBrowser {
+    width: 400px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #container #map {
+    height: 400px;
+    width: 320px;
+    background-color: blue;
+  }
+  #container #drawingBrowser {
+    width: 300px;
+  }
+}

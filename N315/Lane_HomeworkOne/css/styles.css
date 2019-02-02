@@ -1,0 +1,353 @@
+/*variables for Underline bar for header and footer*/
+/*variables for responsive menu button*/
+/*border bar mixins*/
+/*menu button mixins*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.428;
+  font-size: 14px;
+}
+body {
+  height: 100%;
+}
+p {
+  margin-bottom: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+.contentWrapper {
+  position: relative;
+  background-color: #FFFFFF;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.toddMenu {
+  position: absolute;
+  min-height: 100%;
+  width: 20%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: darkblue;
+}
+.toddMenu ul {
+  list-style: none;
+}
+.toddMenu ul li {
+  cursor: pointer;
+  padding-left: 20px;
+  border-bottom: 2px solid #888888;
+  background-color: green;
+}
+.toddMenu ul li:nth-child(odd) {
+  background-color: #00e600;
+}
+/* Menu Button styles */
+header {
+  height: 100px;
+  background-color: #720000;
+  opacity: .95;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 5px double #888888;
+}
+header .logo {
+  align-self: center;
+  height: 85%;
+}
+header .logo img {
+  height: 100%;
+}
+header h2 {
+  align-self: center;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+    flex-direction: column;
+  }
+  header .logo {
+    height: 70%;
+  }
+  header .menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  header {
+    height: 150px;
+    padding-bottom: 24px;
+  }
+  header .logo {
+    height: 60%;
+  }
+  header h2 {
+    text-align: center;
+  }
+}
+.menu {
+  width: 40px;
+  height: 29px;
+  align-self: center;
+}
+.menu a {
+  border-bottom: 0px double #888888;
+}
+.menu a:hover {
+  background-color: #720000;
+}
+.menu-btn {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 40px;
+  height: 27.742424242424242px;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  width: 40px;
+  height: 3.5px;
+}
+.menu-btn span {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: 12.121212121212121px;
+}
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.menu-btn span:before {
+  top: -12.121212121212121px;
+}
+.menu-btn span:after {
+  top: 12.121212121212121px;
+}
+/* Menu Button */
+.menu-btn.active span {
+  background-color: transparent;
+}
+.menu-btn.active span:before,
+.menu-btn.active span:after {
+  top: 0;
+}
+.menu-btn.active span:before {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+}
+.menu-btn.active span:after {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+}
+/* Menu Button Active */
+.seen nav {
+  display: block;
+}
+nav {
+  display: none;
+  background-color: #333;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+nav ul li span {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  top: 62px;
+}
+nav ul li span i {
+  color: #ffffff;
+}
+nav ul .tap ul {
+  display: block;
+}
+nav ul ul {
+  display: none;
+}
+li {
+  list-style: none;
+}
+li h3 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+a {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: .2em;
+  border-bottom: 1px solid #888888;
+}
+a:hover {
+  background-color: #505050;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    top: 145px;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav {
+    top: 189px;
+    width: 100%;
+  }
+}
+.content {
+  margin-bottom: auto;
+  padding: 20px;
+}
+.content .submitContainer {
+  padding-top: 20px;
+}
+.content .topicSubmit {
+  color: #FFFFFF;
+  background-color: #00008b;
+  padding: 20px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .topicSubmit:hover {
+  background-color: #0000f1;
+}
+footer {
+  height: 35%;
+  background-color: #720000;
+  border-top: 5px double #888888;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer .footerCol {
+  display: flex;
+  width: 100%;
+}
+footer .footerContent p {
+  margin-bottom: 0;
+}
+footer .copy {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #720000;
+}
+footer section {
+  height: 197px;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+}
+footer section img {
+  height: 100%;
+}
+@media screen and (max-width: 1500px) {
+  footer {
+    height: 35%;
+  }
+  footer section {
+    height: 175px;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    height: 45%;
+  }
+  footer .footerCol {
+    display: block;
+  }
+  footer section {
+    height: 150px;
+    width: 100%;
+  }
+  footer section h3 {
+    margin-bottom: 12px;
+  }
+  footer section p {
+    font-size: 16px;
+  }
+}
+.guide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  font-size: 250%;
+  color: #FFFFFF;
+}
+.guide .reply {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+.guide .guideLogin {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+}

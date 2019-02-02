@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link href="css/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="assets/Dev-Workshop-Logo.png">
+    </div>
+
+    <h2>Dev Workshop Speaker Submission</h2>
+
+    <div class="logInOut">
+        <span class="login"><span class="log">Log In </span><i class="fa fa-sign-in"></i></span>
+        <span class="divider"> | </span>
+        <span class="signup">Sign Up</span>
+        <span class="settings"><span class="set"></span><i></i></span>
+    </div>
+</header>
+
+<div id="sign" class="form">
+    <input class="emailSignup" type="email" placeholder="Email"/><br/>
+    <div class="error emailSignupError"></div>
+
+    <input class="fNameSignup" type="text" placeholder="First Name"/><br/>
+    <div class="error fNameSignupError"></div>
+
+    <input class="lNameSignup" type="text" placeholder="Last Name"/><br/>
+    <div class="error lNameSignupError"></div>
+
+    <input class="passwordSignup" type="password" placeholder="Password" maxlength="8"/><br/>
+    <div class="error passSignupError"></div>
+
+    <input class="confirmSignup" type="password" placeholder="Confirm Password" maxlength="8"/>
+    <div class="error confSignupError"></div>
+
+    <button class="signUpButton" type="submit">Submit</button>
+</div>
+
+<div id="login" class="form">
+    <input class="emailLogin" type="email" placeholder="Email"/><br/>
+    <div class="error emailLoginError"></div>
+
+    <input class="passwordLogin" type="password" placeholder="Password" maxlength="8"/><br/>
+    <div class="error passLoginError"></div>
+
+    <button class="loginButton" type="submit">Submit</button>
+</div>
+
+<div id="settings" class="form">
+    <div class="edit"><span class="settingEdit">Edit Account </span><i class="fa fa-edit"></i> </div>
+</div>
+
+<div id="edit" class="form">
+    <input class="fNameEdit" type="text" placeholder="First Name"/><br/>
+    <div class="error fNameEditError"></div>
+
+    <input class="lNameEdit" type="text" placeholder="Last Name"/><br/>
+    <div class="error lNameEditError"></div>
+
+    <button class="editButton" type="submit">Submit</button>
+</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/service.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

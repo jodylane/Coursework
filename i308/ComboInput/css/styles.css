@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+    color: #cccccc;
+}
+body input{
+    width: 20%;
+    margin: 8px;
+    padding: 10px 10px 10px 5px;
+    border-radius: 4px;
+}
+body input:focus{
+    box-shadow: 0px 0px 10px 1px cornflowerblue;
+}
+body button{
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 120%;
+    cursor: pointer;
+}
+body button:hover{
+    box-shadow: 0px 0px 10px .5px cornflowerblue;
+}

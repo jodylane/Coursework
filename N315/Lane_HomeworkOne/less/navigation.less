@@ -1,0 +1,67 @@
+.seen nav {
+  display: block;
+}
+
+nav {
+  display: none;
+  background-color: #333;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+
+  ul {
+
+    li span {
+      float: right;
+      margin-right: 20px;
+      position: relative;
+      top: 62px;
+      i {
+          color: @menuColor;
+      }
+    }
+    .tap ul {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+  }
+
+}
+
+li {
+  list-style: none;
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+    color: @menuColor;
+  }
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @menuColor;
+  letter-spacing: .2em;
+  .borderBottom(1px, solid, @barColor);
+  &:hover {
+    background-color: #505050;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    top: 145px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav {
+    top: 189px;
+    width: 100%;
+  }
+}

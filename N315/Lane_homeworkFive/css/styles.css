@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+html {
+  line-height: 1.428;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  margin-bottom: 20px;
+}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 5px double #888888;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+header .logo {
+  align-self: center;
+  height: 85%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+header .logo img {
+  height: 100%;
+}
+header h2 {
+  margin-bottom: 0;
+  align-self: center;
+}
+header .logInOut {
+  align-self: center;
+  font-size: 130%;
+}
+header .logInOut .login {
+  cursor: pointer;
+}
+header .logInOut .login:hover {
+  color: #b30000;
+}
+header .logInOut .logout {
+  cursor: pointer;
+}
+header .logInOut .logout:hover {
+  color: #b30000;
+}
+header .logInOut .divider {
+  margin: 0 10px;
+}
+header .logInOut .signup {
+  cursor: pointer;
+}
+header .logInOut .signup:hover {
+  color: #b30000;
+}
+header .logInOut .settings {
+  cursor: pointer;
+}
+header .logInOut .settings:hover {
+  color: #b30000;
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 120px;
+    padding: 10px;
+    box-sizing: content-box;
+    flex-direction: column;
+  }
+  header .logo {
+    height: 70%;
+  }
+  header .logInOut {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 550px) {
+  header {
+    height: 150px;
+    padding-bottom: 20px;
+  }
+  header .logo {
+    height: 60%;
+  }
+  header h2 {
+    text-align: center;
+  }
+}
+.form {
+  z-index: 1;
+  height: 550px;
+  width: 400px;
+  background-color: #cccccc;
+  margin: 20px auto 20px;
+  text-align: center;
+}
+.form .edit {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.form .edit:hover {
+  background-color: #e6e6e6;
+}
+.form .edit span {
+  font-size: 125%;
+}
+.form input {
+  width: 70%;
+  margin: 8px;
+  padding: 10px 10px 10px 5px;
+  border-radius: 4px;
+}
+.form input:focus {
+  box-shadow: 0px 0px 10px 1px cornflowerblue;
+}
+.form button {
+  padding: 10px 40px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 120%;
+}
+.form button:hover {
+  box-shadow: 0px 0px 10px .5px cornflowerblue;
+}
+.form .error {
+  color: red;
+  margin: 0 50px;
+  text-align: left;
+}
+.modalBG {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+}
+.modalBG .modalFG {
+  background-color: #cccccc;
+  height: 300px;
+  width: 35%;
+  border-radius: 4px;
+  align-self: center;
+  align-content: center;
+  position: relative;
+}
+.modalBG .modalFG .modalExit {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.modalBG .modalFG .modalExit i {
+  font-size: 250%;
+  padding: 5px 10px;
+  color: #595959;
+}
+.modalBG .modalFG .modalExit i:hover {
+  color: darkred;
+}
+.modalBG .modalFG .message {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.modalBG .modalFG .message h3 {
+  text-align: center;
+}

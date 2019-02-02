@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProjectOne</title>
+    <link href="css/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/jquery.tagsinput.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--navigation bar allows users to switch between pages-->
+<ul id="nav">
+    <span onclick="showPosts()">home</span>
+    <span onclick="showTags()">Search Tag</span>
+    <span onclick="addPost()">New Post</span>
+</ul>
+
+<!--the home page where all the posts will be displayed in order they were
+inserted starting at rowid 0 to whatever #..-->
+<div id="index" class="page">
+    <h2>Post Time-line</h2>
+</div>
+
+<!--the search by tag name displays all tags clicking a tag will bring give
+you all posts with that are associated with that tag-->
+<div id="tags" class="page">
+
+</div>
+<div id="posts" class="page">
+
+</div>
+
+<!--creates a new post -->
+<div id="addPost" class="page">
+    <h2>Create A Post</h2>
+    <input class="email" placeholder="email.."/>
+    <input class="username" placeholder="username.."/>
+    <textarea class="msg" placeholder="message.."></textarea>
+
+    <!--tagsinput the tags placed here will be moved to the tags section-->
+    <input class="txtTags"/>
+    <div class="tagsSection"></div>
+
+    <button class="addPostBtn">Create Post</button>
+</div>
+<!--add comment page-->
+<div id="addComment" class="page">
+    <h2>Add A Comment</h2>
+    <input class="email" placeholder="email.."/>
+    <input class="username" placeholder="username.."/>
+    <textarea class="note" placeholder="comment"></textarea>
+    <button class="addCommentBtn">Add Comment</button>
+</div>
+
+<!--edit post page-->
+<div id="editPost" class="page">
+    <h2>Edit Post</h2>
+    <input type="hidden" class="postId"/>
+    <input class="email" placeholder="email"/>
+    <input class="username" placeholder="username"/>
+    <input class="msg" placeholder="message"/>
+
+    <!--tags input tags will be inserted into tags section div-->
+    <input class="txtTags"/>
+    <div class="tagsSection"></div>
+    <button class="btnEdit">Edit Post</button>
+</div>
+<!--comment page-->
+<div id="commentPost" class="page">
+    <input type="hidden" class="postId"/>
+    <input class="email" placeholder="email"/>
+    <input class="username" placeholder="username"/>
+    <input class="msg" placeholder="message"/>
+    <!--tags input tags will be inserted into tags section div-->
+    <input class="txtTags"/>
+    <div class="tagsSection"></div>
+</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/dbTools.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

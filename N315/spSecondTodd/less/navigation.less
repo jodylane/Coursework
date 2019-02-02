@@ -1,0 +1,38 @@
+.menu {
+  position: absolute;
+  background-color: #333;
+  width: 20%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: #ccc;
+  ul {
+    list-style: none;
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 0;
+    //color: #ffffff;
+  }
+  li {
+    .bottomBorder(@bHeight, solid, @bColor);
+    //background-color: #888888;
+    padding: 30px 0 30px 10px;
+    cursor: pointer;
+    &:nth-child(odd) {
+      //background-color: #89ff4d;
+    }
+    &:hover {
+      background-color: red;
+    }
+    &:active {
+      background-color: darken(red,10%);
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu{
+    width: 30%;
+  }
+}

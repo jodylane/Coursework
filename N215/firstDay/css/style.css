@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    /*resets all margins to 0 so all elements that have a default margin is set to have no margin*/
+}
+body{
+    max-height: 100%;
+    /*you cant have the page be 100% in use unless you set heights to  the body and header max height allows you to have have the page shift to that percent of the page that is being shown and doesnt get jumbled up*/
+}
+header{
+    max-height: 100%;
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#nav {
+  width: 210px;
+  margin: 20px auto;
+  list-style: none;
+}
+#nav span {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#nav span:hover {
+  box-shadow: 0px 0px 8px .5px cornflowerblue;
+}
+.page {
+  background-color: #666666;
+  width: 500px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+.page .post {
+  background-color: #CCCCCC;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.page .post span {
+  padding: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.page .post span:hover {
+  box-shadow: 0px 0px 8px .5px cornflowerblue;
+}
+.page .tagsinput {
+  margin: 0 auto;
+}
+.page .alignLeft {
+  text-align: left;
+}
+.page input,
+.page textarea {
+  width: 60%;
+  padding: 5px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+.page input:focus,
+.page textarea:focus {
+  box-shadow: 0px 0px 8px .5px cornflowerblue;
+}
+.page input:last-child:focus,
+.page textarea:last-child:focus {
+  box-shadow: none;
+}
+.page button {
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 120%;
+  cursor: pointer;
+}
+.page button:hover {
+  box-shadow: 0px 0px 10px .5px cornflowerblue;
+}
+#posts {
+  text-align: left;
+}
+#tags {
+  height: 200px;
+}
+#tags div {
+  width: 15%;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  float: left;
+}
+#tags div:hover {
+  box-shadow: 0px 0px 8px .5px cornflowerblue;
+}

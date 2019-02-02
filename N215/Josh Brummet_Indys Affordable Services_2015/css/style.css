@@ -1,0 +1,389 @@
+
+
+/*beginning styles for all pages including: contact info, logo image, page title heading, default font style, background color, footer, and navigation bar*/
+*{
+    margin: 0px;
+}
+body{
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+}
+h1{
+    padding-left: 25px;
+    color: #ffffff;
+}
+/*beginning styles for top of page header content including: contact bar, logo, page title, and navigation bar*/
+.contactInfoTopText{
+    float: right;
+    line-height: 20px;
+    padding-right: 25px;
+    color: #000;
+}
+.contactInfoTop{
+    background-color: #CCCCCC;
+    height: 20px;
+    width: 100%;
+}
+.logoHeader{
+    height: 186px;
+    width: 100%;
+}
+#logo{
+    height: 186px;
+    width: 325px;
+    float: left;
+}
+#logoWords{
+    height: 186px;
+    width: 1258px;
+    margin-top: -20px;
+    float: left;
+}
+#pageTitle{
+    background-color: #CCCCCC;
+    height: 55px;
+    line-height: 55px;
+}
+/*beginning styles for navigation bar including: font: size and color, background: color and hover color */
+nav{
+    text-decoration: none;
+    line-height: 55px;
+    float: right;
+    height: 55px;
+}
+nav ul ul {
+    display: none;
+    background:#CCCCCC;
+    /*this controls the background color for the drop down menu*/
+    border-radius: 0px;
+    padding: 0px 0px;
+    position: absolute;
+    top: 100%;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul {
+    background:#CCCCCC;
+    /*this controls nav bar background color*/
+    padding: 0 0px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    margin-top:-.25px;
+}
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:hover {
+    background:#d3d3d3;
+    /*this controls the color side hovering bar in the drop down menu*/
+}
+nav ul li:hover a {
+    color:#000;
+    /*this control text color in drop down menu with out hovering*/
+}
+nav ul li a {
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #000;
+    /*controls drop down menu primary or top line color*/
+    border-bottom: 1px solid #000;
+    /*controls drop down menu secondary or bottom line color*/
+    position: relative;
+}
+nav ul ul li a {
+    padding: 0px 20px 0px 80px;
+}
+nav ul ul li a:hover {
+    background:#d3d3d3;
+    /*this controls hovering color in drop down menu background*/
+    color:#fff;
+    /*this controls hovering text color in drop down menu*/
+}
+/*ending styles for navigation bar including: font: size and color, background: color and hover color */
+/*Ending styles for top of page header content including: contact bar, logo, page title, and navigation bar*/
+/*beginning styles for  bottom of page footer content including: contact, copyright, facebook image, and twitter image*/
+footer{
+    background-color: #CCCCCC;
+    height: 82px;
+}
+.contactInfoBottom{
+    height: 75px;
+    width: 375px;
+    float: left;
+}
+.contactInfoBottomText{
+    margin-top: 18px;
+    color: #ffffff;
+}
+.copyright{
+    height: 75px;
+    width: 300px;
+    float: left;
+    margin-left: 300px;
+}
+.copyrightText{
+    margin-top: 29px;
+    color: #ffffff;
+}
+.twitter{
+    margin-top: 3px;
+    height: 75px;
+    width: 75px;
+    float: right;
+    margin-right: 80px;
+}
+.yelp{
+    margin-top: 3px;
+    height: 75px;
+    width: 75px;
+    float: right;
+    margin-right: 80px;
+}
+.facebook{
+    margin-top: 3px;
+    height: 75px;
+    width: 75px;
+    float: right;
+    margin-right: 70px;
+}
+.footerImage{
+    height: 75px;
+    width: 75px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+/*ending styles for footer content including: contact, copyright, facebook image, and twitter image*/
+/*ending styles for all pages including: header, navigation bar, and footer*/
+.wholePageIndex{
+    height: 115%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.wholePageContact{
+    height: 115%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.wholePageService{
+    height: 75%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.wholePageAbout{
+    height: 115%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.wholePagePortfolio{
+    height: 280%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.wholePageTestimonial{
+    height: 70%;
+    width: 100%;
+    background-color: #009ECE;
+}
+.contentWrapper{
+    margin: 0 auto;
+    height: 100%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.content{
+    width: 1110px;
+    margin: 0 auto;
+    height: 100%;
+}
+.indexBtnImg{
+    width:44%;
+    margin-top: 80px;
+}
+.indexImg{
+    float: right;
+    width: 56%;
+}
+input{
+    background-color:rgba(255,255,255,100);
+    width:25.2%;
+    height:35px;
+    font-size:20px;
+    color:rgba(0,0,0,1);
+}
+textarea{
+    max-width:25.2%;
+    max-height:150px;
+    min-width:25.2%;
+    min-height:150px;
+    font-size:20px;
+}
+#feedBack{
+    color: #900;
+    margin-left: 150px;
+}
+#send{
+    color: #000;
+}
+.error{
+    display:inline;
+    color: #900;
+}
+.contactImage{
+    float: right;
+    width: 46%;
+    margin-top: -508px;
+}
+.contentWrapperContact{
+    margin: 0 auto;
+    height: 100%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.serviceBullets{
+    margin-top: 10px;
+    font-size:22px;
+    margin-left: 15px;
+}
+.servicesH3{
+    margin-left: 180px;
+    font-size:32px;
+}
+.servicesH32{
+    margin-left: 133px;
+    font-size:32px;
+}
+.serviceText{
+    width: 600px;
+    margin: 0 auto;
+}
+.contentWrapperService{
+    margin: 0 auto;
+    height: 131%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.imageSizeService{
+    width: 36%;
+    height: 300px;
+    float: left;
+    margin-left: 5.25px;
+    margin-top: 10px;
+}
+
+.serviceLeft{
+    float: left;
+    margin-left: 50px;
+}
+.serviceRight{
+    margin-left: 100px;
+    float: left;
+}
+.testTextObj{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+
+}
+.testText{
+    margin: 0 auto;
+    width: 47.4%;
+    padding: 10px;
+    font-size: 18px;
+}
+.contentWrapperTest{
+    margin: 0 auto;
+    height: 56%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.contentWrapperPortfolio{
+    margin: 0 auto;
+    height: 350%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.imagePortfolioSize{
+    width: 32%;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 22.22px;
+}
+.imagePortfolioSizeOut{
+    width: 32%;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+}
+#location{
+    width: 32%;
+    height: 300px;
+    float: left;
+    margin-left: 50px;
+}
+.sectionOne{
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
+}
+.aboutText{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+}
+.locationText{
+    float: right;
+    margin-right: 125px;
+    width: 47.4%;
+    padding-top: 40px;
+    font-size: 18px;
+}
+.contentWrapperAbout{
+    margin: 0 auto;
+    height: 145%;
+    width: 1170px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.sectionTwo{
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+.wholePage{
+    height: 115%;
+    width: 100%;
+    background-color: #9B8246;
+}

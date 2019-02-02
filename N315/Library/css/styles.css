@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+}
+#calendar {
+  padding: 20px;
+}
+#calendar .row1 {
+  display: flex;
+}
+#calendar .row1 .header {
+  width: 356.5px;
+}
+#calendar .row1 .buttons {
+  width: 356.5px;
+}
+#calendar .row1 .buttons button {
+  float: right;
+  margin: 10px;
+}
+#calendar .row {
+  display: flex;
+  align-content: center;
+}
+#calendar .dayOfWeek {
+  height: 30px;
+  width: 100px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  font-size: 120%;
+}
+#calendar .size {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #cccccc;
+  font-size: 120%;
+}
+#calendar .dead {
+  background-color: #626262;
+}
+#calendar .break {
+  background-color: #00008B;
+}
+#calendar .click {
+  cursor: pointer;
+}
+#calendar .click:hover {
+  box-shadow: 0px 0px 12px 3px cornflowerblue;
+}
+#time .scheduler {
+  background-color: aqua;
+  width: 5.435%;
+  height: 50px;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#time p {
+  font-size: 140%;
+  padding-bottom: 10px;
+}
+#time .container-column {
+  position: absolute;
+  top: 0;
+  height: 600px;
+  width: 10%;
+  text-align: center;
+  float: left;
+}
+#time .container-column .capacity {
+  width: 47%;
+  float: right;
+  height: 40px;
+}
+#time .container-column .rooms {
+  width: 53%;
+  float: left;
+  height: 40px;
+}
+#time .container-column .border {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  height: 40.25px;
+}
+#time .container-row {
+  height: 500px;
+  width: 90%;
+  margin-left: 10%;
+  float: left;
+}
+#time .container-row .scheduler {
+  background-color: white;
+  width: 5.435%;
+  height: 40px;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#time .container-row .libraryTime div {
+  float: left;
+  width: 5.435%;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  font-size: 110%;
+  height: 40px;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  display: none;
+}
+.modal .form {
+  position: relative;
+  width: 40%;
+  height: 30%;
+  min-height: 32%;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+  align-self: center;
+}
+.modal .form .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.modal .form .fa-times-circle:hover {
+  color: crimson;
+}
+.modal .form h2 {
+  text-align: center;
+  margin: 10px;
+}
+.modal .form h4 {
+  text-align: center;
+}
+.modal .form form {
+  display: flex;
+  flex-direction: column;
+}
+.modal .form form .submit {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  transition: .2s;
+  height: 50px;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+}
+.modal .form form .submit:hover {
+  background-color: crimson;
+  color: white;
+  transition-duration: .2s;
+  cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+  .modal .signUpForm form label,
+  .modal .loginForm form label,
+  .modal .signUpForm form input,
+  .modal .loginForm form input {
+    font-size: 90%;
+  }
+}
+.helloModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: none;
+  width: 20%;
+  height: 20%;
+  min-height: 150px;
+  min-width: 300px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+}
+.helloModal .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.helloModal .fa-times-circle:hover {
+  color: crimson;
+}
+.modal2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 96;
+  display: none;
+}
+.modal2 .form {
+  position: relative;
+  width: 40%;
+  height: 30%;
+  min-height: 32%;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+  align-self: center;
+}
+.modal2 .form .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.modal2 .form .fa-times-circle:hover {
+  color: crimson;
+}
+.modal2 .form h2 {
+  text-align: center;
+  margin: 10px;
+}
+.modal2 .form h4 {
+  text-align: center;
+}
+.modal2 .form form {
+  display: flex;
+  flex-direction: column;
+}
+.modal2 .form form .submit {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  transition: .2s;
+  height: 50px;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+}
+.modal2 .form form .submit:hover {
+  background-color: crimson;
+  color: white;
+  transition-duration: .2s;
+  cursor: pointer;
+}
+.helloModal2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 97;
+  display: none;
+  width: 20%;
+  height: 20%;
+  min-height: 150px;
+  min-width: 300px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+}
+.helloModal2 .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.helloModal2 .fa-times-circle:hover {
+  color: crimson;
+}

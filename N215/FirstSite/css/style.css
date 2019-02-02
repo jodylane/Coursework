@@ -1,0 +1,233 @@
+/*Created by Josh Lane on 8/24/15*
+*N215
+*/
+/*Beginning styles for all pages including: styles for html and body which when given height of 100% along with body enables the content height to truly be 100% of the page. * is the tag for resetting defaults for stuff ex. margin and padding */
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+*{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+
+.clearFix{
+    *zoom: 1;
+}
+.clearFix:before, .clearFix:after{
+    line-height: 0;
+    display: block;
+    content: '';
+    clear: both;
+}
+/*Ending styles for all pages*/
+/*Beginning styles for index page content including: navigation bar, links, and the logo image*/
+.logo{
+    height: 83px;
+    width: 380px;
+    margin-left: 200px;
+    margin-top: -83px;
+    line-height: 83px;
+}
+.logoImage{
+    height: 83px;
+    width: 380px;
+}
+nav{
+    background-color: #79ADA7;
+    width: 100%;
+    height: 83px;
+}
+nav a{
+    float: right;
+    text-decoration: none;
+    color: #000;
+    margin-right: 25px;
+    line-height: 83px;
+    position: relative;
+}
+/*beginning style for underline animation for navigation*/
+ a:hover{
+    color: #000;
+}
+ /*must have a position of absolute, the width covers the whole span of the anchor tag link, height is the height of the underline bar or the thickness, bottom affects how high up or how low the bar will go you have to have the a:before because that how it is before the mouse is on it and after you hover over it a:hover:before the before becomes visible not sure why content is there but it is important for it to work*/
+ a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 25px;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+ /*scaling it by one makes it look normal any more kind of multiplies the width by what ever variable you insert into it*/
+ a:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.anchor{
+    margin-right: 260px;
+}
+/*Ending styles for index page content including: navigation bar, links, and the logo image*/
+/*Beginning styles for index page content including: slider and slider image*/
+.sliderImage{
+    width: 100%;
+    height: 540px;
+}
+.slider{
+    width: 100%;
+    height: 540px;
+    margin-top: 40px;
+    /*background-image: url("../assets/bluredPasta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+/*Ending styles for index page content including: slider and slider image*/
+/*Beginning styles for index page content including: content container, info header box, info header box text, image boxes, image boxes headers,fixes for headers, and image boxes text*/
+.content{
+    width: 1110px;
+    min-height: 65%;
+    margin: 0 auto;
+}
+.infoHead{
+    background-color: #8AC4BD;
+    width: 1110px;
+    height: 89px;
+    margin-top: 40px;
+}
+.infoHeadText{
+    width: 1035px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.infoImages{
+    height: 140px;
+    width: 255px;
+}
+.infoImageExt{
+    height: 140px;
+    width: 255px;
+    margin-top: 30px;
+    float: left;
+}
+.infoImageInt{
+    height: 140px;
+    width: 255px;
+    margin-top: 30px;
+    float: left;
+    margin-left: 30px;
+}
+.infoImageHeadExt{
+    width: 150px;
+    height: 35px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+.infoImageHeadInt{
+    width: 150px;
+    height: 35px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 135px;
+}
+.headFix{
+    margin-left: 30px;
+}
+.headFix1{
+    margin-left: 15px;
+    width: 160px;
+}
+.headFix2{
+    width: 160px;
+}
+.infoImageTextExt{
+    width: 255px;
+    height: 160px;
+    float: left;
+    margin-top: 15px;
+}
+.infoImageTextInt{
+    width: 255px;
+    height: 160px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+/*Ending styles for index page content including:  content container, info header box, info header box text, image boxes, image boxes headers,fixes for headers, and image boxes text*/
+/*beginning styles for footer content including: footer, headers, paragraphs, and footer image*/
+footer{
+    height: 390px;
+    width: 100%;
+    background-color: #79ADA7;
+    clear: both;
+    margin-top: 33px;
+}
+.footerHeadTopLeft{
+    height: 25px;
+    width: 330px;
+    float: right;
+    margin-top: 45px;
+}
+.footerHeadTopRight{
+    height: 25px;
+    width: 330px;
+    float: right;
+    margin-top: 45px;
+}
+.footerTextBottomRight{
+    height: 195px;
+    width: 330px;
+    float: right;
+    margin-top: 25px;
+}
+.pics{
+    height: 195px;
+    width: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.footerTextBottomLeft{
+
+    height: 195px;
+    width: 330px;
+    float: right;
+    margin-top: 25px;
+}
+.phone{
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+}
+.phone2{
+    height: 20px;
+    width: 20px;
+    margin-top: 30px;
+}
+.phone1{
+    height: 20px;
+    width: 20px;
+}
+.footerText{
+    margin-left: 40px;
+    width: 250px;
+}
+.footerText1{
+    width: 298px;
+}
+.footerImagePos{
+    float: right;
+    height: 390px;
+    width: 644px;
+}
+.headFix3 {
+    margin-left: 15px;
+}
+/*beginning styles for footer content including: footer, headers, paragraphs, fixes for headers, and footer image*/

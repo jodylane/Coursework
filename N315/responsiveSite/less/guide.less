@@ -1,0 +1,78 @@
+.guide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000, 70%);
+  color: #fff;
+  font-size: 250%;
+  z-index: 99;
+  .reply {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    .replyText{
+      font-size: 50%;
+    }
+  }
+  .guideLogin {
+    position: absolute;
+    right: 200px;
+    top: 30px;
+    .guideLoginText{
+      font-size: 50%;
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .guide{
+    .reply{
+      width: 130px;
+      left: auto;
+      right: 435px;
+      line-height: 5px;
+    }
+    .replyIc{
+      top: 50px;
+      transform: rotateY(180deg);
+    }
+    .guideLogin{
+      right: 170px;
+      top: 3px;
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .guide{
+    .reply{
+      right: 395px;
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  .guide{
+    .reply{
+      right: 335px;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .guide{
+    .reply{
+      right: 285px;
+      top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 450px){
+  .guide{
+    .reply{
+      left: 2px;
+      right: 185px;
+    }
+    .guideLogin{
+      right: 140px;
+    }
+  }
+}

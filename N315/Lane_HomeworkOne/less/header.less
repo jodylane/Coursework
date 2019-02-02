@@ -1,0 +1,56 @@
+/* Menu Button styles */
+header{
+  height: 100px;
+  background-color: #720000;
+  opacity: .95;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  .borderBottom();
+  .logo{
+    //background-color: aquamarine;
+    align-self: center;
+    height: 85%;
+    img{
+      height: 100%;
+    }
+  }
+  h2{
+    align-self: center;
+    margin-bottom: 0;
+    color: @menuColor;
+  }
+}
+@media screen and (max-width: 800px){
+  header{
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+    //background-color: darkcyan;
+    flex-direction: column;
+
+    .logo{
+      height: 70%;
+    }
+    .menu{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 560px){
+  header{
+    //background-color: cornflowerblue;
+    height: 150px;
+    padding-bottom: 24px;
+    .logo{
+      height: 60%;
+    }
+    h2{
+      text-align: center;
+    }
+  }
+}

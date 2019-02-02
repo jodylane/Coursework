@@ -1,0 +1,9 @@
+.roundedCorner(@radius: @buttonDefaultRad){
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+.siteDefaultButton(@pad: @buttonDefaultPad, @rad: @buttonDefaultRad){
+  padding: @pad;
+  background-color: @buttonDefaultBGColor;
+  .roundedCorner(@rad);
+}

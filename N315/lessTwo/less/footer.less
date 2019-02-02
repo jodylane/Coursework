@@ -1,0 +1,31 @@
+footer{
+  //text-align: center;
+  min-height: 300px;
+  background-color: blue;
+  section{
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    //the fix for adding space is border box in box sizing if i wanted to add space around h2s
+    min-height: 300px;
+    background-color: aqua;
+    &:nth-child(odd){
+      background-color: aquamarine;
+    }
+    a{
+      display: block;
+    }
+  }
+
+}
+@media screen and (max-width: 800px){
+  footer{
+    section{
+      float: none;
+      width: 100%;
+
+    }
+  }
+}

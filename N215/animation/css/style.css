@@ -1,0 +1,8 @@
+.box{
+    background-color: red;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    /*opacity: 0;*/
+}

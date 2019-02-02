@@ -1,0 +1,39 @@
+{
+  "users":[
+    {
+      "f_name": "todd",
+      "l_name": "shelton",
+      "email": "todd@todd.com",
+      "password": "hello",
+      "role": "admin",
+      "topics": [
+        {
+          "topicTitle": "hello",
+          "topicDescription": "this is it"
+        },
+        {
+          "topicTitle": "hello2",
+          "topicDescription": "this is also it"
+        }
+      ]
+    },
+    {
+      "f_name": "josh",
+      "l_name": "lane",
+      "email": "josh@josh.com",
+      "password": "hello",
+      "role": "admin",
+      "topics": [
+        {
+          "topicTitle": "mom",
+          "topicDescription": "this is it"
+        },
+        {
+          "topicTitle": "mom2",
+          "topicDescription": "this is also it"
+        }
+      ]
+    }
+  ]
+
+}

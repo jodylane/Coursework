@@ -1,0 +1,83 @@
+@color4: #000;
+body{
+  margin: 20px;
+}
+a{
+  text-decoration: none;
+  color: #000
+}
+#container{
+  display: flex;
+  justify-content: space-around;
+
+  #map{
+    height: 400px;
+    width: 600px;
+    background-color: red;
+  }
+  canvas{
+    border: #000 solid 1px;
+    cursor: pointer;
+  }
+  #drawingBrowser{
+    width: 600px;
+    //margin-top: 20px;
+    //border: #000 solid 1px;
+    #drawingShowcase{
+      border: #000 solid 1px;
+    }
+    li{
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+  #sketchWidget{
+    margin-top: 20px;
+    //border: #000 solid 1px;
+    height: 400px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1200px){
+  #container{
+    #map{
+      height: 400px;
+      width: 470px;
+      background-color: blue;
+    }
+    #drawingBrowser{
+      width: 400px;
+      margin: 20px;
+    }
+  }
+}
+@media screen and (max-width: 960px){
+  #container{
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 800px){
+  #container{
+    #map{
+      height: 400px;
+      width: 470px;
+      background-color: blue;
+    }
+    #drawingBrowser{
+      width: 400px;
+      margin: 20px;
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  #container{
+    #map{
+      height: 400px;
+      width: 320px;
+      background-color: blue;
+    }
+    #drawingBrowser{
+      width: 300px;
+    }
+  }
+}

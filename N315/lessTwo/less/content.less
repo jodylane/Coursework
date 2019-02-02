@@ -1,0 +1,38 @@
+section{
+  margin: 0 auto;
+  width: 90%;
+  min-height: 300px;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  section{
+    float: left;
+    width: 32.4%;
+    margin-right: 12px;
+    background-color: aqua;
+    &:nth-child(odd){
+      background-color: aquamarine;
+    }
+    &:last-child{
+      margin-right: 0;
+      background-color: brown;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section{
+    section{
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1900px){
+  section{
+
+    section{
+      margin-right: 16px;
+    }
+  }
+}

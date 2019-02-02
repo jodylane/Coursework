@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: @headMB;
+}
+#calendar{
+  padding: 20px;
+  .row1{
+    display: flex;
+    .header{
+      //background-color: #888888;
+      width: 356.5px;
+    }
+    .buttons{
+      width: 356.5px;
+      //background-color: #00008B;
+      button{
+        float: right;
+        margin: 10px;
+      }
+    }
+
+  }
+  .row{
+    display: flex;
+    align-content: center;
+  }
+  .dayOfWeek{
+    height: 30px;
+    width: @squareSize;
+    border: 1px solid #cccccc;
+    text-align: center;
+    font-size: 120%;
+  }
+  .size{
+    height: @squareSize;
+    width: @squareSize;
+    //float: left;
+    border: 1px solid #cccccc;
+    font-size: 120%;
+  }
+
+  .dead{
+    background-color:  lighten(#555, 5%, 0);
+
+  }
+  .break{
+    background-color: #00008B;
+  }
+  .click{
+    cursor: pointer;
+    &:hover{
+      box-shadow: 0px 0px 12px 3px cornflowerblue;
+
+    }
+  }
+}
+#time{
+  .scheduler{
+    background-color: aqua;
+    width: 5.435%;
+    height: 50px;
+    float: left;
+    border: 1px solid #cccccc;
+  }
+  p{
+    font-size: 140%;
+    padding-bottom: 10px;
+  }
+  .container-column{
+    position: absolute;
+    top: 0;
+    height: 600px;
+    width: 10%;
+    //background-color: #00008B;
+    text-align: center;
+    float: left;
+    .capacity{
+      //background-color: #e6e6e6;
+      width: 47%;
+      float: right;
+      height: 40px;
+
+    }
+    .rooms{
+      //background-color: #888888;
+      width: 53%;
+      float: left;
+      height: 40px;
+    }
+    .border{
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      height: 40.25px;
+    }
+  }
+  .container-row{
+    height: 500px;
+    width: 90%;
+    //background-color: #990000;
+    margin-left: 10%;
+    float: left;
+    .scheduler{
+      background-color: white;
+      width: 5.435%;
+      height: 40px;
+      float: left;
+      border: 1px solid #cccccc;
+    }
+    .libraryTime{
+      div{
+        float: left;
+        width: 5.435%;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        font-size: 110%;
+        height: 40px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+.borderTop(@bHt: @barHeight, @bSt: @barStyle, @bCr: @barColor){
+  border-top: @bHt @bSt @bCr;
+}
+.borderBottom(@bHt: @barHeight, @bSt: @barStyle, @bCr: @barColor){
+  border-bottom: @bHt @bSt @bCr;
+}
+/*border bar mixins*/
+.transition (@time:@slow) {
+  transition:           all @time ease-in-out;
+  -webkit-transition:   all @time ease-in-out;
+  -moz-transition:      all @time ease-in-out;
+  -o-transition:        all @time ease-in-out;
+  -ms-transition:       all @time ease-in-out;
+}
+.transition-delay (@time:@slow) {
+  -webkit-transition-delay: @time;
+  -moz-transition-delay: @time;
+  -o-transition-delay: @time;
+  -ms-transition-delay: @time;
+  transition-delay: @time;
+}
+.rotate (@deg: 45deg){
+  transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+}
+/*menu button mixins*/
+.callToActionButton(){
+  color: #FFFFFF;
+  background-color: @callToActionBG;
+  padding: 20px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: lighten(@callToActionBG,20%)
+  }
+}

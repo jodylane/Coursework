@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+/*begining styles for all pages*/
+.container-wrapper{
+	background-color:#8d613a;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.content{
+	background-color:#c8b29b;
+}
+
+header{
+	height:40px;
+}
+
+nav{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 25px;
+}
+
+nav a{
+	padding: 10px;
+}
+
+.widget{
+	float:right;
+	margin-top:-35px;
+	position:relative;
+	display:inline-block;
+	padding-right: 20px;
+}
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fefeff;
+}
+
+.page{
+	padding-left:65px;
+	margin: -10px 0px -8px 0px;
+}
+
+footer{
+	text-align:center;
+	height: 30px;
+	margin-top:15px;
+}
+/*end styles for all pages*/
+/*begining styles for page 1 content*/
+.pg1c{
+	padding:40px 400px 180px 50px;
+}
+
+.pg1chair{
+	float:right;
+	margin-top: -515px;
+	padding-right:40px;
+}
+/*ending styles for page 1 content*/
+/*begining styles for page 2 content*/
+.pg2c{
+	padding:40px 60px 90px 70px;
+}
+/*ending styles for page 2 content*/
+/*begining styles for page 3 content*/
+.pg3c{
+	padding: 25px 0px 40px 0px;
+	margin: 0px 0px 0px 60px;
+}
+.first{
+	margin-left:-1px
+}
+
+.email{
+	margin-left: 35px;
+}
+
+.phone{
+	margin-left:-7px
+}
+
+.submit{
+	margin:-10px 0px 0px 85px;	
+	padding-bottom:300px;
+}
+/*ending styles for page 3 content*/
+/*begining styles for page 4 content*/
+.pg4c{
+	padding: 50px 0px 45px 0px;
+}
+
+.words{
+	padding:5px 200px 0px 230px;
+}
+
+.images{
+	margin:0px 0px -175px 55px;
+}
+/*ending styles for page 4 content*/

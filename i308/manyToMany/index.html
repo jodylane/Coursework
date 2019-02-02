@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/jquery.tagsinput.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <ul id="nav">
+        <span onclick="showAddQuote()">Add Quote</span>
+        <span onclick="showTags()">Tags</span>
+    </ul>
+</div>
+
+<div id="index" class="page">
+    <h2>Hello World!</h2>
+</div>
+<!--listings pages-->
+<div id="tags" class="page">
+
+</div>
+<div id="quotes" class="page">
+
+</div>
+<div id="addQuote" class="page">
+    <h2>Add Quote</h2>
+    <textarea class="txtQuote" placeholder="Quote.."></textarea><br/>
+    <input class="txtAuthor" placeholder="Author.."/><br/>
+    <input class="txtYear" placeholder="Quote year.."/><br/>
+
+    <!--taginput. Tags will be moved to the tags section div.-->
+    <input class="txtTags"/>
+    <div class="tagsSection"></div>
+
+    <button class="btnAdd">Add Quote</button>
+</div>
+<!--edit quote page-->
+<div id="editQuote" class="page">
+    <h2>Edit Quote</h2>
+    <input type="hidden" class="quoteid"/>
+    <textarea class="txtQuote" placeholder="Quote.."></textarea><br/>
+    <input class="txtAuthor" placeholder="Author.."/><br/>
+    <input class="txtYear" placeholder="Quote year.."/><br/>
+
+    <!--taginput. Tags will be moved to the tags section div.-->
+    <input class="txtTags"/>
+    <div class="tagsSection"></div>
+
+    <button class="btnEdit">Edit Quote</button>
+</div>
+
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script src="js/dbTools.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color: #3e8e41;
+  width: 250px;
+  ul{
+      .tap ul {
+        display: block;
+      }
+    ul{
+      display: none;
+    }
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: .2em;
+    border-bottom: 1px dotted gray;
+  }
+  .arrow{
+    &:after{
+      transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.modalBG{
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000,70%);
+  display: none;
+  justify-content: center;
+  .modalFG{
+    background-color: darken(#fff,20%);
+    height: 300px;
+    width: 35%;
+    border-radius: 4px;
+    align-self: center;
+    align-content: center;
+    position: relative;
+    .modalExit {
+      //background-color: blue;
+      width: 45px;
+      height: 45px;
+      position:absolute;
+      right: 0;
+      cursor: pointer;
+      i {
+        font-size: 250%;
+        padding: 5px 10px;
+        color: darken(#ffffff, 65%, 0);
+        &:hover{
+          color: darkred;
+        }
+      }
+    }
+    .message{
+      position: absolute;
+      top: 40%;
+      //background-color: aqua;
+      width: 100%;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}

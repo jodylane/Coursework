@@ -1,0 +1,220 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //background-color: fade(#000, 70%);
+  z-index: 98;
+
+  display: none;
+
+  .form {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    min-height: 32%;
+    background-color: #fff;
+    .roundCorners(10px);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: solid;
+    align-self: center;
+
+
+    .fa-times-circle {
+      position: absolute;
+      right: 20px;
+      font-size: x-large;
+      cursor: pointer;
+
+      &:hover {
+        color: crimson;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .submit {
+        margin: 0 auto;
+        width: 50%;
+        background-color: #fff;
+        transition: .2s;
+        height: 50px;
+        font-size: large;
+        .roundCorners(5px);
+        border: solid;
+        border-width: 2px;
+      }
+
+      .submit:hover {
+        background-color: crimson;
+        color: white;
+        transition-duration: .2s;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  .modal{
+    .signUpForm, .loginForm {
+      form {
+        label, input {
+          font-size: 90%;
+        }
+      }
+    }
+  }
+
+}
+
+.helloModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //background-color: fade(#000, 70%);
+  //background-color: #fff;
+  z-index: 99;
+  display: none;
+  width: 20%;
+  height: 20%;
+  min-height: 150px;
+  min-width: 300px;
+  .roundCorners(10px);
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+  //text-align: center;
+
+  .fa-times-circle {
+    position: absolute;
+    right: 20px;
+    font-size: x-large;
+    cursor: pointer;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+}
+.modal2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //background-color: fade(#000, 70%);
+  z-index: 96;
+
+  display: none;
+
+  .form {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    min-height: 32%;
+    background-color: #fff;
+    .roundCorners(10px);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: solid;
+    align-self: center;
+
+
+    .fa-times-circle {
+      position: absolute;
+      right: 20px;
+      font-size: x-large;
+      cursor: pointer;
+
+      &:hover {
+        color: crimson;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .submit {
+        margin: 0 auto;
+        width: 50%;
+        background-color: #fff;
+        transition: .2s;
+        height: 50px;
+        font-size: large;
+        .roundCorners(5px);
+        border: solid;
+        border-width: 2px;
+      }
+
+      .submit:hover {
+        background-color: crimson;
+        color: white;
+        transition-duration: .2s;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+.helloModal2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //background-color: fade(#000, 70%);
+  //background-color: #fff;
+  z-index: 97;
+  display: none;
+  width: 20%;
+  height: 20%;
+  min-height: 150px;
+  min-width: 300px;
+  .roundCorners(10px);
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid;
+  //text-align: center;
+
+  .fa-times-circle {
+    position: absolute;
+    right: 20px;
+    font-size: x-large;
+    cursor: pointer;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+}

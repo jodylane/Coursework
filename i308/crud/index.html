@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="wholePage">
+<div class="span">
+    <span onclick="showCatsPage()">List Cat</span>
+    <span onclick="showAddCatPage()">Add Cat</span>
+</div>
+
+    <div id="addCatPage" class="page">
+        <input class="txtCatName" placeholder="Cat Name"/><br>
+        <input class="txtCatType" placeholder="Cat Type"/><br>
+        <input class="txtCatAge" placeholder="Cat Age"/><br>
+        <textarea class="txtCatDesc" placeholder="Cat Description"></textarea><br>
+        <div class="center"><button class="addCat">Add Cat</button></div>
+    </div>
+
+    <div id="editCatPage" class="page">
+        <input type="hidden" class="catId"/>
+        <input class="txtCatName" placeholder="Cat Name"/><br>
+        <input class="txtCatType" placeholder="Cat Type"/><br>
+        <input class="txtCatAge" placeholder="Cat Age"/><br>
+        <textarea class="txtCatDesc" placeholder="Cat Description"></textarea><br>
+        <div class="center"><button class="updateCat">Update</button></div>
+    </div>
+
+    <div id="catsPage" class="page">
+
+    </div>
+
+    <div id="catPage" class="page">
+        <div class="catName"></div>
+        <br/>
+
+        <div class="catType"></div>
+        <br/>
+
+        <div class="catAge"></div>
+        <br/>
+
+        <div class="catDescription"></div>
+    </div>
+</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/dbTools.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

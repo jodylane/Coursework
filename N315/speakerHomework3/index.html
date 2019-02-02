@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Workshop</title>
+
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="content-wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets/Dev-Workshop-Logo.png">
+        </div>
+
+        <h2>Dev Workshop Speaker Submission</h2>
+
+        <div class="logInOut">
+            <span class="login">Log In <i class="fa fa-sign-in"></i></span>
+            <span class="divider"> | </span>
+            <span class="signup">Sign Up</span>
+            <!--<span class="settings"><i class="fa fa-gear"></i></span>-->
+        </div>
+    </header>
+    <div class="content">
+        <h1>Welcome!</h1>
+
+        <p>Please submit your topic for the 2016 Dev Workshop conference that will be held in September.</p>
+
+        <div class="tSubmit">
+            <span class="topicSubmit">Submit Your Topic</span>
+        </div>
+    </div>
+    <footer>
+        <div class="footerCol">
+            <section>
+                <div class="footerText">
+                <h3>Upcoming Events</h3>
+
+                <p>February 23, 2016 Workshop</p>
+
+                <p>March 16, 2016 Speaker</p>
+
+                <p>March 27, 2016 Workshop</p>
+
+                <p>April 7, 2016 Speaker</p>
+                </div>
+            </section>
+            <section>
+                <div class="footerImg">
+                <img src="assets/DevWorkshop-Class.jpg"/>
+                </div>
+            </section>
+            <section>
+                <div class="footerImg">
+                <img src="assets/DevWorkshop.jpg"/>
+                </div>
+            </section>
+        </div>
+        <div class="copy">Dev Workshop LLC &copy; 2016</div>
+    </footer>
+</div>
+
+<div class="menu">
+    <ul>
+        <h4>Dev Workshop</h4>
+        <li>HOME</li>
+        <li>SPEAKERS</li>
+        <li>TOPICS</li>
+        <li>MY TOPICS</li>
+    </ul>
+</div>
+
+<div class="guide">
+<span class="reply">
+<i class="fa fa-reply replyIc"></i>
+<span class="replyText">Click here to view menu</span>
+
+
+</span>
+
+<span class="guideLogin">
+<span class="guideLoginText">Log in here</span>
+<i class="fa fa-share"></i>
+</span>
+</div>
+<div class="modalBG">
+    <div class="modalFG">
+        <div class="modalExit">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <div class="signupForm">
+            <div class="form">
+                <div class="input">
+                    <h3>Sign Up Here</h3>
+
+                    <div class="error"></div>
+                    <input id="firstName" placeholder="First Name"/><br/>
+                    <input id="lastName" placeholder="Last Name"/><br/>
+                    <input id="email" type="email" placeholder="Email"/><br/>
+                    <input id="password" type="password" placeholder="Password" maxlength="20"/><br/>
+                    <input id="confPass" type="password" placeholder="Confirm Password"/><br/>
+                    <button id="submitSignupButton" class="button toddSubmit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="loginForm">
+            <div class="form">
+                <div class="input">
+                    <h3>Login Here</h3>
+
+                    <div id="error"></div>
+                    <input id="logEmail" type="email" placeholder="Email"/><br/>
+                    <input id="logPass" type="password" placeholder="Password"/><br/>
+                    <button id="submitLoginButton" class="button" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modalBG2">
+    <div class="modalFG2">
+        <div class="modalExit2">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="success">
+            <div class="form">
+                <div class="input">
+                    <h3>Success!</h3>
+                    <h5>Congratulations you have been logged in.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="fail">
+            <div class="form">
+                <div class="input">
+                    <h3>Failed!</h3>
+                    <h5>Please go back and make sure you have entered correct information.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="noDB">
+            <div class="form">
+                <div class="input">
+                    <h3>Fail!</h3>
+                    <h5>We do not have a record of your account please click sign up.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/service.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
